@@ -10,8 +10,8 @@ type (
 		Name      string
 		Abilities []Ability
 	}
-	Heal       struct{}
-	DamageBuff struct{}
+	Heal        struct{}
+	DamageBluff struct{}
 
 	Ability interface {
 		Execute()
@@ -30,7 +30,7 @@ func (h Heal) Execute() {
 	fmt.Println("Heal")
 }
 
-func (d DamageBuff) Execute() {
+func (d DamageBluff) Execute() {
 	fmt.Println("Increase Damage 100%")
 }
 
@@ -40,7 +40,7 @@ func main() {
 		Name: "Steak",
 		Abilities: []Ability{
 			Heal{},
-			DamageBuff{},
+			DamageBluff{},
 		},
 	}
 

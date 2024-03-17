@@ -9,14 +9,14 @@ type (
 
 func (p *Player) EatSteak(steak *Steak) {
 	steak.Heal()
-	steak.DamageBuff()
+	steak.DamageBluff()
 }
 
 func (s *Steak) Heal() {
 	fmt.Println("Heal")
 }
 
-func (s *Steak) DamageBuff() {
+func (s *Steak) DamageBluff() {
 	fmt.Println("Increase Damage 100%")
 }
 
